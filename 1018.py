@@ -1,12 +1,9 @@
 N,M=map(int,input().split())
-
 bd=[]
-
 for i in range(N):
     a=input()
     bd.append(a)
 max=64
-
 for j in range(N-7):
     for k in range(M-7):
         for s in ["W", "B"]:
@@ -25,6 +22,5 @@ for j in range(N-7):
             max=count
         if 64-count<max:
             max=64-count
-
 print(max)
         
